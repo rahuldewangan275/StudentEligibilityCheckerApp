@@ -48,6 +48,9 @@ The Student Scholarship Eligibility API is designed to process and determine the
   ### Access Swagger documentation at http://localhost:8080/swagger-ui.html.
 
   ### API Endpoints
+  ![Screenshot 2024-05-17 185215](https://github.com/rahuldewangan275/StudentEligibilityCheckerApp/assets/115481639/8f4f2766-f876-4099-9b86-818c1b39a3eb)
+
+  
 ```
 - Upload and Process CSV
 - Endpoint: /api/students/upload
@@ -56,6 +59,11 @@ The Student Scholarship Eligibility API is designed to process and determine the
 - Response: Returns the updated CSV file with the eligible column set to YES or NO.(Download the new File)
 ```
 
+SNAP:
+![Screenshot 2024-05-17 185321](https://github.com/rahuldewangan275/StudentEligibilityCheckerApp/assets/115481639/d2c9f610-d15d-43ad-ba34-c59bfed942b9)
+
+
+
 ### Check Eligibility by Roll Number
 ``` 
 Endpoint: /api/students/searchStudent?roll_number= roll number
@@ -63,6 +71,9 @@ Method: GET
 Description: Check the eligibility status of a student by roll number.
 Response: Returns YES, NO, or NA (if data is not present).
 ```
+SNAP:
+![Screenshot 2024-05-17 185357](https://github.com/rahuldewangan275/StudentEligibilityCheckerApp/assets/115481639/06bc8b1f-8a41-41df-8fda-53f3e26efb26)
+
   
 
 ### CSV File Structure
