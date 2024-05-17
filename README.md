@@ -17,18 +17,18 @@ The Student Scholarship Eligibility API is designed to process and determine the
   * API Documentation : Swagger API
   * DataBase: H2 (migrated from MySql to H2)
   * other tools: Intellij, Dbeaver
- 
-    ## Clone the repository
-`
-(https://github.com/rahuldewangan275/StudentEligibilityCheckerApp.git)
-'
 
-## steps
+## Installation and Setup
+
+### Clone the repository  
+```
+(https://github.com/rahuldewangan275/StudentEligibilityCheckerApp.git)
+```
+
 ### should be installed on your system
 * H2 data base 
 * Intellij
 
-### create spring boot project
 ### add required dependencies
 * spring-boot-starter-web
 * opencsv
@@ -38,16 +38,34 @@ The Student Scholarship Eligibility API is designed to process and determine the
 * for unit test : spring-boot-starter-test dependency
 * developers tool: lombok
 * swagger
-  * `
+  ```
   	<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.2.0</version>
 		</dependency> `
+  ```
+  ### Access Swagger documentation at http://localhost:8080/swagger-ui.html.
+
+  ### API Endpoints
+```
+- Upload and Process CSV
+- Endpoint: /api/students/upload
+- Method: POST
+- Description: Upload a CSV file and start the processing to determine eligibility.
+- Response: Returns the updated CSV file with the eligible column set to YES or NO.(Download the new File)
+```
+
+### Check Eligibility by Roll Number
+``` 
+Endpoint: /api/students/searchStudent?roll_number= roll number
+Method: GET
+Description: Check the eligibility status of a student by roll number.
+Response: Returns YES, NO, or NA (if data is not present).
+```
+  
 
 ### CSV File Structure
-
-
  The CSV file should have the following columns:
 - roll_number: Unique identifier for each student.
 - student_name: Name of the student.
@@ -63,7 +81,11 @@ roll_number,student_name,science,maths,english,computer,eligible
 100101,Vivek Sharma,86,89,78,92,ToBeChecked
 ```
 
+## Logging
+The application includes appropriate logging for various events and errors. Logs are essential for monitoring the application's behavior and debugging issues.
 
+## Unit Testing
+Unit tests are included to ensure the reliability of the API
   
  
 
