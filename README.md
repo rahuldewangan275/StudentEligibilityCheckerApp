@@ -1,6 +1,14 @@
-# Student Scholarship Eligibility API
+# Student Scholarship Eligibility Checking App
 ## Overview
 The Student Scholarship Eligibility API is designed to process and determine the scholarship eligibility of students based on their marks. This microservice-based API handles CSV file uploads, processes the student data, and outputs an updated CSV file with eligibility status. The eligibility criteria are dynamic and can be modified before processing any file. Additionally, the API supports querying the eligibility status of a student by roll number.
+
+## DEMO CLIP
+
+
+https://github.com/rahuldewangan275/StudentEligibilityCheckerApp/assets/115481639/205ec738-6512-4bfa-acd1-c48d269c5fc1
+
+
+
 
 ## Features
 * Features
